@@ -1,0 +1,16 @@
+.line::after{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: black;
+    left: 52%;
+}
+.line-1::after{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: black;
+    right: 52%;
+}

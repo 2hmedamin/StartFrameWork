@@ -1,0 +1,21 @@
+footer{
+    background-color: #2C3E50;
+}
+.card{
+    background-color: #2C3E50;
+    color: white;
+    border: transparent;
+}
+.icons{
+    margin: 15px;
+    padding-inline: 10px;
+}
+.icons i{
+    font-size: 15px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 15px;
+    margin-inline: 5px;
+   
+}

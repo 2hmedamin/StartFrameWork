@@ -1,0 +1,6 @@
+.not{
+    border: 2px solid black;
+    border-radius: 30%;
+    background-color: rgba(255, 0, 0, 0.573);
+    color: black;
+}

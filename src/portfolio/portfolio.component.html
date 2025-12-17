@@ -1,0 +1,40 @@
+<section class="py-5">
+    <div class="mb-4">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="fw-bold fs-1">CONATCT SECTION</h2>
+                <div class="d-flex align-items-center justify-content-center mb-3">
+                    <div class="line"></div>
+                    <i class="fa-solid fa-star fs-3 text-black"></i>
+                    <div class="line-1"></div>
+                </div>
+            </div>
+            <div>
+                <div class="row g-4">
+                    @for (portfolio of portfolios; track $index) {
+                    <div class="itme col-md-4" (click)="isHidden = false; modelImage = portfolio.imgSrc">
+                        <img [src]="portfolio.imgSrc" class="w-100" alt="">
+                        <div class="layer d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    }
+                    @empty{
+                    <div class="col-12">
+                        <div class="portfolio">
+                            <h1 class="bg-danger text-center fw-bold text-white">No portfolio found</h1>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div (click)="closeSlied($event['target'] , imgRef)" [class.d-none]="isHidden"
+        class="position-fixed top-0 end-0 start-0 bottom-0 d-flex align-items-center justify-content-center"
+        id="lightBox">
+        <img #imgRef [src]="modelImage" class="w-40" alt="">
+    </div>
+
+</section>

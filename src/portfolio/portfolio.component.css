@@ -1,0 +1,46 @@
+.line::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: black;
+    left: 52%;
+}
+.line-1::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: black;
+    right: 52%;
+}
+.layer{
+    color: white;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 12px;
+    left: 12px;
+   opacity: 0;
+   transition:opacity 1s , transform 1s;
+}
+.itme:hover .layer {
+    background-color: #32ab93a5;
+    opacity: 1;
+}
+.itme {
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+.layer i{
+    font-size: 100px;
+}
+
+
+#lightBox {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.w-40{
+    width: 40%;
+}
